@@ -1,0 +1,23 @@
+.main-container {
+  padding: 37px;
+}
+.main--form {
+  display: grid;
+  grid-template: 40px 40px/1fr 1fr;
+  grid-gap: 15px;
+}
+.main-form--submit-button {
+  color: white;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: -0.1em;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  border-radius: 5px;
+  grid-column: 1/-1;
+}
