@@ -1,8 +1,11 @@
+import { useState } from "react";
 import "./Meme.css";
 import memeData from "./memeData";
 export default function Meme() {
+  const [imageurl, setImageUrl] = useState("");
+
   function handleClick() {
-    console.log(memeData.data.memes[Math.floor(Math.random() * 101)].url);
+    setImageUrl(memeData.data.memes[Math.floor(Math.random() * 101)].url);
   }
   return (
     <main className="main--container">
@@ -13,6 +16,9 @@ export default function Meme() {
           Get a new meme image
         </button>
       </form>
+      <div className="meme--container">
+        {imageurl && <img src={imageurl} className="meme-picture" />}
+      </div>
     </main>
   );
 }
