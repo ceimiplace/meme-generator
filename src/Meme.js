@@ -1,7 +1,7 @@
 import "./Meme.css";
 export default function Meme() {
   return (
-    <main>
+    <main className="main--container">
       <form className="main--form">
         <input placeholder="Top text"></input>
         <input placeholder="Bottom text"></input>
